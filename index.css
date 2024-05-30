@@ -1,0 +1,81 @@
+* {
+  font-family: Inter;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  display: inline-block;
+  animation: spin 7s linear infinite;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(2, 5, 14, 0.889);
+  width: 620px;
+  /* height: 330px; */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(2, 3, 7, 0.246);
+  padding: 20px;
+}
+.header h1 {
+  color: rgb(0, 204, 255);
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.header h4 {
+  color: aliceblue;
+  margin: 0 25px 0 120px;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: disc; /* or circle, square, etc. */
+  margin-left: 20px; /* adjust as necessary */
+  padding-left: 20px; /* adjust as necessary */
+  margin: 25px 0 50px 30px;
+}
+li {
+  margin: 15px;
+}
+li::marker {
+  color: aqua;
+  font-size: 30px;
+}
+.imgw {
+  position: relative;
+  bottom: 270px;
+  left: 400px;
+  margin: 0 0 0 0;
+  width: 280px;
+  opacity: 0.2;
+}
+
+.maincontent {
+  padding: 45px 0 40px 30px;
+  max-height: 480px;
+}
